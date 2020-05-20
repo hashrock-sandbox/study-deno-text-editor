@@ -2,14 +2,16 @@
 
 # Run
 
+At the moment, deno_webview seems to block the http server handler, so you need to run the two scripts in separate processes.
+
 execute two commands:
 
 - deno run --allow-net --allow-write --allow-read server.ts
-- deno run --allow-env --allow-write --allow-read --allow-net --allow-plugin .\index.ts
+- deno run --unstable --allow-env --allow-write --allow-read --allow-net --allow-plugin .\index.ts
 
 # Edge Webview info
 
-If you are using Windows, you may require this: 
+If you are using Windows, you may require this:
 
 https://github.com/Boscop/web-view#known-issues-and-limitations
 
